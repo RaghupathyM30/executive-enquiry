@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: #ffffff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #080808;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 550px;
+  background: #101010;
+  padding: 40px;
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.header p:last-child {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.field {
+  margin-bottom: 22px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 9px;
+  color: #eee;
+}
+
+.field label span {
+  color: #ff5555;
+}
+
+.field label small {
+  color: #888;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  background: #191919;
+  border: 1px solid #383838;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #aaa;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+select {
+  color: #aaa;
+  cursor: pointer;
+}
+
+select option {
+  background: #191919;
+  color: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.error {
+  display: block;
+  color: #ff5555;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.success {
+  color: #72d69a;
+  font-size: 14px;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #315b40;
+  background: #132219;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.required-note {
+  text-align: center;
+  font-size: 11px;
+  color: #777;
+  margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
